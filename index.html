@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta  charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="kho_tbd.css">
+
+<title>TRANG CHỦ</title>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<!-- FLIP BOX -->
+
+<div class="flex-container">
+ 
+ 
+ <div id= "hoa" class="flex-item">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="logo2.png" alt="Paris" style="width:100%;height:100%">
+    </div>
+    <div class="flip-box-back">
+    
+      <h2>Chất Lượng</h2>
+      <p> Là Danh Dự</p>
+    </div>
+  </div>
+</div>
+
+   
+   
+  
+    <input id="tim_kiem" onkeyup="myFunction1()" class= "flex-item" type="search">	
+    
+    <div id="myModal1" class="modal">
+<span class="close">&times;</span>
+<ul class="modal-content" id="myUL">
+  <li><a href="design.html">Trang Chủ  </a></li>
+  <li><a href="ve_cty.html">Giới Thiệu</a></li>
+
+  <li><a href="thiet_bi.html">Thiết Bị</a></li>
+  <li><a href="san_pham.html">Sản Phẩm</a></li>
+
+  <li><a href="chung_nhan.html">Chứng Nhận</a></li>
+  <li><a href="LienHe.html">Liên Hệ</a></li>
+  
+</ul>
+</div>
+    		
+   <button class= "flex-item" type="button" onclick="tim()"><i class="fa fa-fw fa-search"></i> Search</button> 				
+   <button class= "flex-item" type="button"><i class="fa fa-fw fa-user"></i>Login</button>			
+	
+	
+  
+   
+</div> 
+
+<!-- Tạo Navibar -->
+
+<ul  id="navbar" class="flex-container b_color">
+ 
+
+   
+   
+  
+ 
+  <li><a class="flex-item" style="background-color: Aqua" href="#home"><i class="fa fa-fw fa-home" ></i></a>  </li>
+  
+  <!-- GIỚI THIỆU -->
+  
+  <li class="dropdown">
+    <a  href="ve_cty.html" class="flex-item dropbtn">GIỚI THIỆU</a>
+  <div class="dropdown-content">
+    
+     <a  id="nhamay" href="ve_cty.html" target="_self" onclick="open_vecty(event)" class="flex-item " >
+         <div>       
+    <img src="profile.jpg" class="img_thietbi">
+    <p>NHÀ MÁY</p> 
+        </div>      
+      </a>        
+      
+       
+       <a  id="muctieu" href="ve_cty.html" target="_self" onclick="open_vecty(event)" class="flex-item ">
+         <div>
+  <img src="tn_sm.jpg"  class="img_thietbi" >
+  <p>MỤC TIÊU</p>
+          </div>        
+       </a>
+       
+       
+      <a  id="moitruong" href="ve_cty.html" target="_self" onclick="open_vecty(event)" class="flex-item ">       
+         <div>
+   <img src="cs_mt.jpg" class="img_thietbi" >  
+   <p>MÔI TRƯỜNG</p>  
+        </div>       
+      </a>
+       
+      
+      <a id="hoatdong" href="ve_cty.html" target="_self" onclick="open_vecty(event)" class="flex-item ">       
+         <div>
+   <img src="hd_ct.jpg" class="img_thietbi" >  
+   <p>HOẠT ĐỘNG</p>  
+        </div>       
+      </a>  
+      
+      
+      <a  id="nangsuat" href="ve_cty.html" target="_self" onclick="open_vecty(event)" class="flex-item ">       
+         <div>
+   <img src="ns_nm.jpg" class="img_thietbi" >  
+   <p>NĂNG SUẤT</p>  
+        </div>       
+      </a> 
+      
+      
+      <a  id="nhansu" href="ve_cty.html" target="_self" onclick="open_vecty(event)" class="flex-item ">       
+         <div>
+   <img src="cs_ns.jpg" class="img_thietbi" >  
+   <p>NHÂN SỰ</p>  
+        </div>       
+      </a> 
+      
+      <a  id="chatluong" href="ve_cty.html" target="_self" onclick="open_vecty(event)" class="flex-item ">       
+         <div>
+   <img src="cs_cl.jpg" class="img_thietbi" >  
+   <p>CHẤT LƯỢNG</p>  
+        </div>       
+      </a>      
+    </div>
+ </li> 
+  
+   <!-- THIẾT BỊ -->
+   
+ <li class="dropdown">
+    <a href="thiet_bi.html" class="flex-item dropbtn">THIẾT BỊ</a>
+    <div class="dropdown-content">
+    
+       <a onclick="myFunction(event)" id="dan_may" class="flex-item " href="thiet_bi1.html" target="_self">
+         <div>       
+    <img src="img6.jpg" class="img_thietbi">
+    <p>Dàn Máy</p> 
+        </div>      
+      </a>        
+      
+       
+       <a onclick="myFunction(event)" id="bang_chuyen" class="flex-item " href="thiet_bi1.html" target="_self">
+         <div>
+  <img src="tb_bc.jpg"  class="img_thietbi" >
+  <p>Băng Chuyền</p>
+          </div>        
+       </a>
+       
+      <a onclick="myFunction(event)" id="ham_dong" class="flex-item " href="thiet_bi1.html" target="_self">       
+         <div>
+   <img src="tb_hdg.png" class="img_thietbi" >  
+   <p>Hầm Đông</p>  
+        </div>       
+      </a>
+      
+        
+      <a onclick="myFunction(event)" id="kho_lanh" class="flex-item " href="thiet_bi1.html" target="_self">       
+         <div>
+   <img src="kl.jpeg" class="img_thietbi" >  
+   <p>Kho Lạnh</p>  
+        </div>       
+      </a>  
+        
+      
+       
+       
+      
+    </div>
+  </li>
+  
+   <!-- SẢN PHẨM -->
+  
+ <li class="dropdown">
+    <a href="san_pham.html" class="flex-item dropbtn">SẢN PHẨM</a>
+    <div class="dropdown-content">
+    <a onclick="open_sanpham(event)" id="yellowfin_tuna" class="flex-item " href="san_pham.html" target="_self">
+         <div>       
+    <img src="tuna2.jpg" class="img_thietbi">
+    <p>Cá Ngừ</p> 
+        </div>      
+      </a>        
+      
+       
+       <a onclick="open_sanpham(event)" id="co_tuna" class="flex-item " href="san_pham.html" target="_self">
+         <div>
+  <img src="tuna12.jpg"  class="img_thietbi" >
+  <p>Cá Ngừ</p>
+          </div>        
+       </a>
+       
+      <a onclick="open_sanpham(event)" id="layang_scad" class="flex-item " href="san_pham.html" target="_self">
+         <div>
+  <img src="tuna5.jpg"  class="img_thietbi" >
+  <p>Cá Ngừ</p>
+          </div>        
+       </a>
+      
+        
+     <a onclick="open_sanpham(event)" id="cuttle_fish" class="flex-item " href="san_pham.html" target="_self">
+         <div>
+  <img src="susi.jpg"  class="img_thietbi" >
+  <p>SuSi</p>
+          </div>        
+       </a> 
+        
+      
+       
+       
+      
+    </div>
+  </li>
+  
+  
+  <!-- CHỨNG NHẬN-->
+  
+ <li class="dropdown">
+    <a href="chung_nhan.html" class="flex-item dropbtn">CHỨNG NHẬN</a>
+    <div class="dropdown-content">
+    <a onclick="open_chung_nhan(event)" id="cn_haccp" class="flex-item " href="chung_nhan.html" target="_self">
+         <div>       
+    <img src="cn_haccp.jpg" class="img_thietbi">
+    <p>HACCP</p> 
+        </div>      
+      </a>        
+      
+       
+       <a onclick="open_chung_nhan(event)" id="cn_brc" class="flex-item " href="chung_nhan.html" target="_self">
+         <div>
+  <img src="cn_brc.jpg"  class="img_thietbi" >
+  <p>BRC</p>
+          </div>        
+       </a>
+       
+      <a onclick="open_chung_nhan(event)" id="cn_iso" class="flex-item " href="chung_nhan.html" target="_self">
+         <div>
+  <img src="cn_iso22000_2018.jpg"  class="img_thietbi" >
+  <p>ISO22000_2018</p>
+          </div>        
+       </a>
+      
+        
+     <a onclick="open_chung_nhan(event)" id="cn_hala" class="flex-item " href="chung_nhan.html" target="_self">
+         <div>
+  <img src="cn_hala.jpg"  class="img_thietbi" >
+  <p>HALA</p>
+          </div>        
+       </a> 
+        
+      
+       
+       
+      
+    </div>
+  </li>
+  
+  <li><a class="flex-item" href="LienHe.html">LIÊN HỆ</a> </li>
+ 	
+	
+  
+   
+</ul> 
+<div class="content">
+<div class="row">
+
+<!--// SIDE -->
+
+  <div class="side">
+   <h2>Sản Phẩm Mới</h2>  
+   
+   <!--// HIÊU ỨNG XOAY TRÒN --> 
+
+<div class="content1">
+      <div class="slider-content">
+         <figure class="shadow"><img  src="img_mk1.jpg" onclick="openModal();currentSlide1(1)" class="hover-shadow cursor"></figure>
+         <figure class="shadow"><img  src="img_mk2.jpg" onclick="openModal();currentSlide1(2)" class="hover-shadow cursor"></figure>
+         <figure class="shadow"><img  src="img_mk3.jpg" onclick="openModal();currentSlide1(3)" class="hover-shadow cursor"></figure>
+         <figure class="shadow"><img src="img_mk4.jpg"  onclick="openModal();currentSlide1(4)" class="hover-shadow cursor"></figure >
+         <figure class="shadow"><img src="tuna1.jpg"    onclick="openModal();currentSlide1(5)" class="hover-shadow cursor"></figure>
+         <figure class="shadow"><img src="tuna2.jpg"    onclick="openModal();currentSlide1(6)" class="hover-shadow cursor"></figure>
+         <figure class="shadow"><img src="tuna3.jpg"    onclick="openModal();currentSlide1(7)" class="hover-shadow cursor"></figure>
+         <figure class="shadow"><img src="img_mk7.jpg"  onclick="openModal();currentSlide1(8)" class="hover-shadow cursor"></figure>
+         <figure class="shadow"><img src="img_mk8.jpg"  onclick="openModal();currentSlide1(9)" class="hover-shadow cursor"></figure>
+         <figure class="shadow"><img src="susi.jpg"    onclick="openModal();currentSlide1(10)" class="hover-shadow cursor"></figure>
+      </div>
+   </div>
+   
+   <!--// MODAL -->
+   
+   
+   <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides1 fade1">
+      <div class="numbertext">1 / 10</div>
+      <img src="img_mk1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides1 fade2">
+      <div class="numbertext">2 / 10</div>
+      <img src="img_mk2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides1 fade3">
+      <div class="numbertext">3 / 10</div>
+      <img src="img_mk3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides1 fade4">
+      <div class="numbertext">4 / 10</div>
+      <img src="img_mk4.jpg" style="width:100%">
+    </div>
+    
+    
+    <div class="mySlides1 fade5">
+      <div class="numbertext">5 / 10</div>
+      <img src="tuna1.jpg" style="width:100%">
+    </div>
+    
+    
+    <div class="mySlides1 fade6">
+      <div class="numbertext">6 / 10</div>
+      <img src="tuna2.jpg" style="width:100%">
+    </div>
+    
+    
+    <div class="mySlides1 fade7">
+      <div class="numbertext">7 / 10</div>
+      <img src="tuna3.jpg" style="width:100%">
+    </div>
+    
+    
+    <div class="mySlides1 fade8">
+      <div class="numbertext">8 / 10</div>
+      <img src="img_mk7.jpg" style="width:100%">
+    </div>
+    
+    
+    <div class="mySlides1 fade9">
+      <div class="numbertext">9 / 10</div>
+      <img src="img_mk8.jpg" style="width:100%">
+    </div>
+    
+    
+    <div class="mySlides1 fade10">
+      <div class="numbertext">10 / 10</div>
+      <img src="susi.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+<div class="row1">
+    <div class="column1">
+      <img class="demo cursor" src="img_mk1.jpg" style="width:100%" onclick="currentSlide1(1)" alt="Nghêu">
+    </div>
+    
+    <div class="column1">
+      <img class="demo cursor" src="img_mk2.jpg" style="width:100%" onclick="currentSlide1(2)" alt="Mực Ống">
+    </div>
+    
+    <div class="column1">
+      <img class="demo cursor" src="img_mk3.jpg" style="width:100%" onclick="currentSlide1(3)" alt="Ống Đỏ">
+    </div>
+    
+    <div class="column1">
+      <img class="demo cursor" src="img_mk4.jpg" style="width:100%" onclick="currentSlide1(4)" alt="Tuộc Và Nang ">
+    </div>
+   
+    <div class="column1">
+      <img class="demo cursor" src="tuna1.jpg" style="width:100%" onclick="currentSlide1(5)" alt="Cá Ngừ ">
+    </div>
+   
+    <div class="column1">
+      <img class="demo cursor" src="tuna2.jpg" style="width:100%" onclick="currentSlide1(6)" alt="Cá Ngừ ">
+    </div>
+    
+    <div class="column1">
+      <img class="demo cursor" src="tuna3.jpg" style="width:100%" onclick="currentSlide1(7)" alt="Cá Ngừ ">
+    </div>
+    
+     <div class="column1">
+      <img class="demo cursor" src="img_mk7.jpg" style="width:100%" onclick="currentSlide1(8)" alt="Tuộc">
+    </div>
+    
+    <div class="column1">
+      <img class="demo cursor" src="img_mk8.jpg" style="width:100%" onclick="currentSlide1(9)" alt="Cá Gáy"> 
+    </div>
+    
+    <div class="column1">
+      <img class="demo cursor" src="susi.jpg" style="width:100%" onclick="currentSlide1(10)" alt="Su Si ">
+    </div>
+     
+  </div>
+    <h3 style="text-align: center;
+  background-color: #009dc4;
+  padding: 2px 16px;
+  color: white;">SẢN PHẨM MỚI</h3>
+</div>
+</div>
+   
+
+  </div>
+  
+  <!--// MAIN -->
+  
+<div class="main">
+
+<h2 >Hình Ảnh Công Ty</h2>
+
+<div class="slideshow-container ">
+
+<div class="mySlides fade1">
+  <div class="numbertext">1 / 7</div>
+  <img class="img_slideshow" src="img_tbd1.jpg" >
+  <div class="text">Caption one</div>
+</div>
+
+<div class="mySlides fade2">
+  <div class="numbertext">2 / 7</div>
+  <img class="img_slideshow" src="img_tbd2.jpg" >
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade3">
+  <div class="numbertext">3 / 7</div>
+  <img class="img_slideshow" src="img_tbd3.jpg" >
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade4">
+  <div class="numbertext">4 / 7</div>
+  <img class="img_slideshow" src="img_tbd4.jpg">
+  <div class="text">Caption Four</div>
+</div>
+
+<div class="mySlides fade5">
+  <div class="numbertext">5 / 7</div>
+  <img class="img_slideshow" src="img_tbd5.jpg" >
+  <div class="text">Caption Five</div>
+</div>
+
+<div class="mySlides fade6">
+  <div class="numbertext">6 / 7</div>
+  <img class="img_slideshow" src="img_tbd6.jpg" >
+  <div class="text">Caption Six</div>
+</div>
+
+<div class="mySlides fade7">
+  <div class="numbertext">7 / 7</div>
+  <img class="img_slideshow" src="img_tbd7.jpg" >
+  <div class="text">Caption Seven</div>
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+   <span class="dot"></span> 
+    <span class="dot"></span> 
+     <span class="dot"></span> 
+      <span class="dot"></span> 
+</div>
+
+  <div class="container_iframe">
+<iframe  src="https://www.youtube.com/embed/-bh3rQx6FnM?playlist=-bh3rQx6FnM,
+-a54_bclPiA&autoplay=1&mute=1&loop=1"></iframe>
+ </div>
+
+
+    
+      
+</div>
+
+ <!--// SIDE1 -->
+ 
+   <div class="side1">
+    <h2>Automatic Slideshow</h2>   
+<p>Change image every 2 seconds:</p> 
+
+
+
+  </div>
+</div>
+</div>
+
+<!--// SOCIAL MEDIA -->
+
+<div class="flex-container1">
+<a href="https://www.facebook.com/profile.php?id=100008753262768" target="_blank" class="fa1 fa fa-facebook"></a>
+<a href="#" class="fa1 fa fa-twitter"></a>
+<a href="#" class="fa1 fa fa-google"></a>
+<a href="#" class="fa1 fa fa-linkedin"></a>
+<a href="#" class="fa1 fa fa-youtube"></a>
+<a href="https://zalo.me/0938608832" target="_blank" class="fa" ><img class="iconviet" src="zalo_logo.jpg"></a>
+ 
+ </div>
+ 
+ <!--// TÌM KIẾM -->
+ 
+ <script src="tim.js"></script>
+ 
+  <!-- // TOP BUTTON -->
+ 
+  <script src="showslides.js"></script> 
+  
+  <!-- // LƯU BIẾN VỀ CÔNG TY -->
+
+<script src="thiet_bi1.js" ></script>
+
+<!-- // LƯU BIẾN THIẾT BỊ -->
+
+<script>
+function myFunction(event) { 
+	 
+	  
+	  sessionStorage.setItem("thiet_bi", event.currentTarget.id);
+	}
+
+</script>
+
+<!-- // LƯU BIẾN VỀ CÔNG TY -->
+
+ <script>
+function open_vecty(event) { 
+	 
+	  
+	  sessionStorage.setItem("ve_cty", event.currentTarget.id);
+	  console.log(sessionStorage.getItem("ve_cty"));
+	}
+
+</script>
+
+<!-- // LƯU BIẾN VỀ SẢN PHẨM-->
+
+ <script>
+function open_sanpham(event) { 	 
+	  
+	  sessionStorage.setItem("san_pham", event.currentTarget.id);
+	 
+	  console.log(sessionStorage.getItem("san_pham"));
+	}
+
+</script>
+
+<!-- // LƯU BIẾN VỀ CHỨNG NHẬN-->
+
+ <script>
+function open_chung_nhan(event) { 	 
+	  
+	  sessionStorage.setItem("chung_nhan", event.currentTarget.id);
+	 
+	  console.log(sessionStorage.getItem("chung_nhan"));
+	}
+
+</script>
+
+<!-- // OPEN MODAL -->
+
+<script src="open_modal.js"></script>
+
+<!-- // FILTER -->
+
+<script>
+function myFunction1() {
+    var input, filter, ul, li, a, i, txtValue, modal, span;
+    modal = document.getElementById("myModal1");
+    modal.style.display="block";
+    input = document.getElementById("tim_kiem");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+  
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+    
+    span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+}
+</script>
+
+
+ 
+
+ 
+</body>
+</html>
