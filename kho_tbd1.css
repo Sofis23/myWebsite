@@ -1,0 +1,928 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+body {  
+   
+     margin: 0%; 
+}  
+ 
+
+   .flex-container {
+  display: flex;
+  flex-flow: row wrap;  
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+ 
+
+  
+}
+.b_color{
+	background: rgba(0, 128, 0, 0.3);
+
+}
+/* XỬ LÝ HÌNH ẢNH */
+#hoa {
+  height:10vh;
+  width: 40%;
+   background-color: transparent;
+  
+
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+ 
+}
+
+.flip-box-inner {
+  position: relative;
+  left:0;
+  top:0;
+  bottom:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+#hoa:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+   position: absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+  display:flex;
+  flex-flow:column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#tim_kiem{display:none;}
+
+#myUL {
+  list-style-type: none;
+  margin: auto auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+ 
+ }
+
+
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+.iconviet { 
+
+ border:5px solid blue;
+ border-radius:50%;
+ width: 4vw;
+ margin: 1vw ;
+
+ 
+}
+
+
+
+.flex-item{
+font-size:2vw;
+
+  
+  
+}
+
+
+
+.row {  
+  display: flex;
+  flex-wrap: nowrap;
+   
+  flex-direction: row;  
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 20%;
+  background-color: Aqua;
+  padding: 20px;
+   border:5px solid blue;
+}
+
+/* Main column */
+.main {
+  flex: 60%;
+ 
+  padding: 20px;
+ border:5px solid green;
+ 
+
+}
+.side1 {
+  flex: 20%;
+   background: rgba(0, 128, 0, 0.6);
+  padding: 20px;
+   border:5px solid red;
+}
+
+/* YUTUBE */
+
+.container_iframe{
+position: relative;
+margin:auto;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+iframe {
+	display:block;
+  position: absolute;
+  top: 0;
+  left: 0; 
+ top: 0;
+   left: 0;
+  bottom:0;
+ right:0;
+  width: 100%;
+  height: 100%;
+  border: none;
+ 
+  
+  
+}
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+/* Navigation */
+li a:hover,button:hover, .dropdown:hover .dropbtn {
+  background-color: Aqua;
+  
+}
+li a:active{
+	 background-color: #04AA6D;
+}
+
+
+
+ul {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+ 
+}
+/* Stick Navigation */
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: green;
+}
+
+.sticky + .content {
+  padding-top: 10vw;
+}
+
+
+
+li a, .dropbtn {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+li .dropdown {
+  display: inline-block;
+ 
+}
+
+.dropdown-content {
+  display: none; 
+  position: absolute;
+  left:0; 
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 4;
+}
+
+.dropdown-content a {
+  color:RED;
+  padding: 12px 16px;
+  text-decoration: none;
+ 
+ 
+}
+
+
+.dropdown-content a:hover {background-color: rgb(128, 255, 255);}
+
+.dropdown:hover .dropdown-content {
+
+display: flex;
+flex-flow: row wrap;   
+justify-content: center;
+align-items: center;
+border:5px solid green;
+border-radius: 10px;
+ background-color: LightGray;
+ 
+}
+
+
+
+
+
+/* Tap Thiết Bị*/
+/* Style the buttons inside the tab */
+
+.row1{
+display:flex;
+flex-flow:row wrap;
+justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+h3{
+	text-align:center;
+}
+.row1 button {
+  background-color: inherit; 
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: background-color 0.4s;
+ 
+ 
+ 
+}
+.img_thietbi{
+	 width:10vw;
+	height:10vw;
+	
+}
+
+
+
+/* Change background color of buttons on hover */
+.row1 button:hover {
+  background-color:  #ccc;
+ 
+}
+
+/* Create an active/current tablink class */
+.row1 button.active {
+  background-color:#008CBA;
+}
+
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Create an center text class */
+.center_text{text-align:center;}
+.active {
+  background-color: #717171;
+}
+
+/*HIỆU ỨNG XOAY TRÒN */
+
+.content1{
+position: relative;
+  width: 100%;
+ overflow:hidden;
+  padding-top: 56.25%; 	
+ margin: 0 auto;   
+  perspective: 2000px; 
+   border:1px solid yellow;
+}
+.slider-content{
+ position:absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%; 
+  display: flex;
+  flex-flow:column nowrap;
+justify-content: center;
+align-items: center;
+ animation: rotate 30s infinite linear;
+ transform-style: preserve-3d;
+}
+.slider-content:hover{
+  cursor: pointer;
+  animation-play-state: paused;
+}
+
+.slider-content figure{
+ height:100%;
+  width:100%;
+  border:1px solid red;
+   
+  
+  
+}
+.slider-content img{
+  image-rendering: auto;
+  transition: all 300ms;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-content img:hover{
+   transform: scale(1.2); 
+  
+} 
+.shadow{ 
+   position: absolute; 
+   box-shadow:  0px 0px 0px #000; 
+}
+
+.slider-content figure:nth-child(1){
+  transform:rotateX(0deg) translateZ(20vw);
+}
+.slider-content figure:nth-child(2){
+  transform:rotateX(40deg) translateZ(20vw);
+}
+.slider-content figure:nth-child(3){
+  transform:rotateX(80deg) translateZ(20vw);
+}
+.slider-content figure:nth-child(4){
+  transform:rotateX(120deg) translateZ(20vw);
+}
+.slider-content figure:nth-child(5){
+  transform:rotateX(160deg) translateZ(20vw);
+}
+.slider-content figure:nth-child(6){
+  transform:rotateX(200deg) translateZ(20vw);
+}
+.slider-content figure:nth-child(7){
+  transform:rotateX(240deg) translateZ(20vw);
+}
+.slider-content figure:nth-child(8){
+  transform:rotateX(280deg) translateZ(20vw);
+}
+.slider-content figure:nth-child(9){
+  transform:rotateX(320deg) translateZ(20vw);
+}
+
+@keyframes rotate {
+  from{
+    transform: rotateX(0deg);
+  }
+  to{
+      transform: rotateX(360deg);
+  }
+}
+
+
+/* MODAL BOX */
+.row1 > .column1 {
+  padding: 0 8px;
+}
+
+
+
+.column1 {
+ 
+  width: 25%;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+ background-color:#005493; /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  perspective: 1000px;
+  width: 70%;
+  max-width: 1200px;
+   padding: 0; 
+   animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides1 {
+  display: none;
+  
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 25%;
+  width: auto;
+  padding: 16px;
+ 
+  color:red;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(118,182,196);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.mySlides1 img {
+  margin-bottom:-4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #5cb85c;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active1,
+.demo:hover {
+  opacity: 1;
+  border:1px solid red;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@keyframes animatetop {
+  from {top: -600px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+
+/* Fading animation */
+
+
+
+.fade1 {
+  animation-name: fade1;
+  animation-duration: 4s;
+}
+
+.fade2 {
+  animation-name: fade2;
+  animation-duration: 4s;
+}
+
+.fade3 {
+  animation-name: fade3;
+  animation-duration: 4s;
+ 
+  perspective: 100px;
+  transform-style: preserve-3d;
+}
+
+.fade4 {
+  animation-name: fade4;
+  animation-duration: 4s;
+  
+}
+
+.fade5 {
+  animation-name: fade5;
+  animation-duration: 4s;
+    
+}
+
+.fade6 {
+  animation-name: fade6;
+  animation-duration: 4s;
+    
+}
+
+
+.fade7 {
+  animation-name: fade7;
+  animation-duration: 4s;
+ 
+ 
+    
+}
+
+
+.fade8 {
+  animation-name: fade8;
+  animation-duration: 4s;
+ position:relative;
+    
+}
+
+
+.fade9 {
+  animation-name: fade9;
+  animation-duration: 4s;
+ 
+    
+}
+
+.fade10 {
+  animation-name: fade10;
+  animation-duration: 4s;
+ 
+    
+}
+
+
+
+@keyframes fade1 {
+  0% {opacity: .4;transform:scale(1);} 
+   
+     100% {opacity: 1;transform:scale(0);}
+}
+
+@keyframes fade2 {
+  0% {opacity: .4;transform:scale(0);} 
+   
+     100% {opacity: 1;transform:scale(1);}
+}
+
+@keyframes fade3 {
+  0% {opacity: .4;transform:rotateY(0deg); } 
+   
+  100% {opacity: 1;transform:rotateY(360deg);}
+}
+
+@keyframes fade4 {
+  0% {opacity: .4; transform:translate(100%, 0);} 
+   
+     100% {opacity: 1;transform:translate(0, 0);}
+}
+@keyframes fade5 {
+  0% {opacity: .4;transform:scaleX(0);} 
+   
+     100% {opacity: 1;transform:scaleX(1);}
+     
+}
+
+@keyframes fade6 {
+  0% {opacity: .4;transform:scaleY(0);} 
+   
+     100% {opacity: 1;transform:scaleY(1);}
+     
+}
+
+@keyframes fade7 {
+  0% {opacity: .4;width:0;} 
+   
+     100% {opacity: 1; width:100%;}
+     
+}
+
+@keyframes fade8 {
+  0% {opacity: .4;top:500px;} 
+   
+     100% {opacity: 1;top:0; }
+     
+}
+
+@keyframes fade9 {
+  0% {opacity: .4;transform:rotateX(0deg); } 
+   
+  100% {opacity: 1;transform:rotateX(360deg);}
+}
+
+@keyframes fade10 {
+  0% {opacity: .4;transform:translateZ(-500px); } 
+   
+  100% {opacity: 1;transform:translateZ(0);}
+}
+ 
+ 
+/* MẠNG XÃ HỘI */
+
+ .flex-container1 {
+ display: flex;
+  flex-flow:column wrap;
+  justify-content: initial;
+ position: fixed;
+  top: 50%;
+  right:0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 3  
+}
+
+.fa1 {
+  padding: 1vw;
+  font-size: 2vw;
+  width:4vw;
+  text-align: center;
+  text-decoration: none;
+  margin: 1vw ;
+  border-radius: 50%;
+
+}
+
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+/* Tap Thiết Bị*/
+/* Style the buttons inside the tab */
+
+.img_thietbi{
+	width:10vw;
+	height:10vw;
+}
+
+/* Scroll*/
+
+#myBtn {
+   /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+@media (max-width: 800px) {
+  .row, .flex-container {
+    flex-direction: column;
+    justify-content: initial;
+  align-items: initial;
+  }
+ 
+  
+  
+  
+  #hoa{
+ 
+
+ 
+  width: 100%;
+   perspective: 4000px;
+ 
+}
+
+.flex-item{
+font-size:4vw; 
+  
+}
+
+.text {font-size: 11px}
+
+li a{
+	width:100%;
+}
+.dropdown:hover .dropdown-content {
+
+
+ flex-direction: column;
+  justify-content: initial;
+  align-items: initial;  
+
+}
+.fa1 {
+ 
+  font-size: 4vw;
+  width:8vw;
+  padding: 2vw;
+  margin:2vw;
+ 
+ 
+  
+}
+.iconviet { 
+
+   width:8vw;
+  
+  margin:2vw;
+
+ 
+}
+
+.sticky{position:static;}
+
+/* Automatic Slideshow */
+
+
+	
+
+/*HIỆU ỨNG XOAY TRÒN */
+
+ 
+
+.slider-content{
+flex-flow:row nowrap;
+
+}
+
+
+ 
+
+
+ 
+	
+
+.slider-content figure:nth-child(1){
+  transform:rotateY(0deg) translateZ(150vw);
+}
+.slider-content figure:nth-child(2){
+  transform:rotateY(40deg) translateZ(150vw);
+}
+.slider-content figure:nth-child(3){
+  transform:rotateY(80deg) translateZ(150vw);
+}
+.slider-content figure:nth-child(4){
+  transform:rotateY(120deg) translateZ(150vw);
+}
+.slider-content figure:nth-child(5){
+  transform:rotateY(160deg) translateZ(150vw);
+}
+.slider-content figure:nth-child(6){
+  transform:rotateY(200deg) translateZ(150vw);
+}
+.slider-content figure:nth-child(7){
+  transform:rotateY(240deg) translateZ(150vw);
+}
+.slider-content figure:nth-child(8){
+  transform:rotateY(280deg) translateZ(150vw);
+}
+.slider-content figure:nth-child(9){
+  transform:rotateY(320deg) translateZ(150vw);
+}
+
+ @keyframes rotate {
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+      transform: rotateY(360deg);
+  }
+  
+}
+
+.img_thietbi{
+	
+	width:100%;
+	height:auto;
+}
+
+}
