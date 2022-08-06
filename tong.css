@@ -1,0 +1,8 @@
+@charset "UTF-8";
+body {  
+    background-color: lightblue;  
+}  
+.edit {  
+    text-align: center;  
+    color: green; 
+}

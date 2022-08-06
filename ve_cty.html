@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta  charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="ve_cty.css">
+
+<title>TRANG CHỦ</title>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<!-- FLIP BOX -->  
+	
+<div class="flex-container">
+ 
+
+   
+  <div id= "hoa" class="flex-item">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="logo2.png" alt="Paris" style="width:100%;height:100%">
+    </div>
+    <div class="flip-box-back">
+    
+      <h2>Chất Lượng</h2>
+      <p> Là Danh Dự</p>
+    </div>
+  </div>
+</div>
+  
+   <input id="tim_kiem" onkeyup="myFunction1()" class= "flex-item" type="search">	
+    
+    <div id="myModal1" class="modal">
+<span class="close">&times;</span>
+<ul class="modal-content" id="myUL">
+  <li><a href="design.html">Trang Chủ  </a></li>
+  <li><a href="ve_cty.html">Giới Thiệu</a></li>
+
+  <li><a href="thiet_bi.html">Thiết Bị</a></li>
+  <li><a href="san_pham.html">Sản Phẩm</a></li>
+
+  <li><a href="chung_nhan.html">Chứng Nhận</a></li>
+  <li><a href="LienHe.html">Liên Hệ</a></li>
+  
+</ul>
+</div>			
+   <button class= "flex-item" type="button" onclick="tim()"><i class="fa fa-fw fa-search"></i> Search</button> 				
+   <button class= "flex-item" type="button"><i class="fa fa-fw fa-user"></i>Login</button>			
+	
+	
+  
+   
+</div> 
+
+<!-- Tạo Navibar -->
+
+<ul  id="navbar" class="flex-container b_color">
+ 
+
+   
+   
+  
+ 
+  <li><a class="flex-item" href="design.html"><i class="fa fa-fw fa-home" ></i></a>  </li>
+  <li><a style="background-color: Aqua" class="flex-item" href="#ve_cty">GIỚI THIỆU</a>	
+ <li class="dropdown">
+    <a href="thiet_bi.html" class="flex-item dropbtn">THIẾT BỊ</a>
+    <div class="dropdown-content">
+    
+     
+     
+     <a onclick="myFunction(event)" id="dan_may" class="flex-item " href="thiet_bi1.html" target="_self">
+         <div>       
+    <img src="img6.jpg" class="img_thietbi">
+    <p>Dàn Máy</p> 
+        </div>      
+      </a>        
+      
+       
+       <a onclick="myFunction(event)" id="bang_chuyen" class="flex-item " href="thiet_bi1.html">
+         <div>
+  <img src="tb_bc.jpg"  class="img_thietbi" >
+  <p>Băng Chuyền</p>
+          </div>        
+       </a>
+       
+      <a onclick="myFunction(event)" id="ham_dong" class="flex-item " href="thiet_bi1.html" target="_self">       
+         <div>
+   <img src="tb_hdg.png" class="img_thietbi" >  
+   <p>Hầm Đông</p>  
+        </div>       
+      </a>
+      
+        
+      <a onclick="myFunction(event)" id="kho_lanh" class="flex-item " href="thiet_bi1.html" target="_self">       
+         <div>
+   <img src="kl.jpeg" class="img_thietbi" >  
+   <p>Kho Lạnh</p>  
+        </div>       
+      </a>   
+            
+      
+    </div>
+  </li>
+   <!-- SẢN PHẨM -->
+  
+ <li class="dropdown">
+    <a href="san_pham.html" class="flex-item dropbtn">SẢN PHẨM</a>
+    <div class="dropdown-content">
+    <a onclick="open_sanpham(event)" id="yellowfin_tuna" class="flex-item " href="san_pham.html" target="_self">
+         <div>       
+    <img src="tuna2.jpg" class="img_thietbi">
+    <p>Cá Ngừ</p> 
+        </div>      
+      </a>        
+      
+       
+       <a onclick="open_sanpham(event)" id="co_tuna" class="flex-item " href="san_pham.html" target="_self">
+         <div>
+  <img src="tuna12.jpg"  class="img_thietbi" >
+  <p>Cá Ngừ</p>
+          </div>        
+       </a>
+       
+      <a onclick="open_sanpham(event)" id="layang_scad" class="flex-item " href="san_pham.html" target="_self">
+         <div>
+  <img src="tuna5.jpg"  class="img_thietbi" >
+  <p>Cá Ngừ</p>
+          </div>        
+       </a>
+      
+        
+     <a onclick="open_sanpham(event)" id="cuttle_fish" class="flex-item " href="san_pham.html" target="_self">
+         <div>
+  <img src="susi.jpg"  class="img_thietbi" >
+  <p>SuSi</p>
+          </div>        
+       </a> 
+        
+      
+       
+       
+      
+    </div>
+  </li>
+  
+  
+ <!-- CHỨNG NHẬN-->
+  
+ <li class="dropdown">
+    <a href="chung_nhan.html" class="flex-item dropbtn">CHỨNG NHẬN</a>
+    <div class="dropdown-content">
+    <a onclick="open_chung_nhan(event)" id="cn_haccp" class="flex-item " href="chung_nhan.html" target="_self">
+         <div>       
+    <img src="cn_haccp.jpg" class="img_thietbi">
+    <p>HACCP</p> 
+        </div>      
+      </a>        
+      
+       
+       <a onclick="open_chung_nhan(event)" id="cn_brc" class="flex-item " href="chung_nhan.html" target="_self">
+         <div>
+  <img src="cn_brc.jpg"  class="img_thietbi" >
+  <p>BRC</p>
+          </div>        
+       </a>
+       
+      <a onclick="open_chung_nhan(event)" id="cn_iso" class="flex-item " href="chung_nhan.html" target="_self">
+         <div>
+  <img src="cn_iso22000_2018.jpg"  class="img_thietbi" >
+  <p>ISO22000_2018</p>
+          </div>        
+       </a>
+      
+        
+     <a onclick="open_chung_nhan(event)" id="cn_hala" class="flex-item " href="chung_nhan.html" target="_self">
+         <div>
+  <img src="cn_hala.jpg"  class="img_thietbi" >
+  <p>HALA</p>
+          </div>        
+       </a> 
+        
+      
+       
+       
+      
+    </div>
+  </li>
+  
+  <li><a class="flex-item" href="LienHe.html">LIÊN HỆ</a> </li>
+ 	
+	
+  
+   
+</ul> 
+<div class="content">
+
+<div class="row">
+
+ <!-- SIDE -->  
+
+  <div class="side">
+   
+  </div>
+  
+   <!-- MAIN-->  
+  
+<div class="main">
+                <div class="row1">
+   <button class="tablinks" onclick="openCity(event, 'nhamay')">
+         <div>
+             <img src="profile.jpg" class="img_thietbi"   >
+             <p>NHÀ MÁY</p>
+         </div>
+  </button>
+  
+  <button class="tablinks" onclick="openCity(event, 'muctieu')">
+         <div>
+             <img src="tn_sm.jpg" class="img_thietbi"  >
+             <p>MỤC TIÊU</p>
+         </div>
+  </button>
+  
+   
+  <button class="tablinks" onclick="openCity(event, 'moitruong')">
+         <div>
+             <img src="cs_mt.jpg" class="img_thietbi"  >
+             <p>MÔI TRƯỜNG</p>
+         </div>
+  </button>
+  
+  <button class="tablinks" onclick="openCity(event, 'hoatdong')">
+         <div>
+             <img src="hd_ct.jpg" class="img_thietbi"  >
+             <p>HOẠT ĐỘNG</p>
+         </div>
+  </button>
+  
+   <button class="tablinks" onclick="openCity(event, 'nangsuat')">
+         <div>
+             <img src="ns_nm.jpg" class="img_thietbi"  >
+             <p>NĂNG SUẤT</p>
+         </div>
+  </button>
+  
+   <button class="tablinks" onclick="openCity(event, 'nhansu')">
+         <div>
+             <img src="cs_ns.jpg" class="img_thietbi"  >
+             <p>NHÂN SỰ</p>
+         </div>
+  </button>
+  
+   <button class="tablinks" onclick="openCity(event, 'chatluong')">
+         <div>
+             <img src="cs_cl.jpg" class="img_thietbi"  >
+             <p>CHẤT LƯỢNG</p>
+         </div>
+  </button>
+  
+  
+  
+  
+  
+                </div> 
+            <!-- Tạo thiết bị chi tiết -->    
+            
+            <!-- VỀ Nhà Máy -->  
+                
+                <div id="nhamay" class="tabcontent">
+  <h3>HỒ SƠ CÔNG TY</h3>
+  <p><b>1.THÔNG TIN CHUNG</b></p>
+  
+<table id="ve_cty">
+
+ 
+  
+  <tr>
+    <td style=" background-color: #04AA6D;">TÊN CÔNG TY</td>
+    <td>TNHH THỦY SẢN NAM THÁI BÌNH DƯƠNG</td>
+   
+  </tr>
+  
+  <tr>
+    <td style=" background-color: #04AA6D;">TÊN QUỐC TẾ</td>
+    <td>SOUTH PACIFIC FISHERY CO.,LTD</td>
+  
+  </tr>
+  
+  <tr>
+    <td style=" background-color: #04AA6D;">TÊN THƯƠNG MẠI</td>    
+    <td >SOFIS CO.,LTD</td>
+    
+  </tr>
+  
+   <tr>
+    <td style=" background-color: #04AA6D;">EU CODE</td>    
+    <td>79-004-NL</td>
+  </tr>
+  
+</table>
+
+
+ <p><b>2.LIÊN HỆ</b></p>
+ 
+<table id="ve_cty">
+
+ 
+  
+  <tr>
+    <td style=" background-color: #04AA6D;">ĐỊA CHỈ</td>
+    <td>Lô LA1, Đường số 1, Khu công nghiệp và dân cư Xuyên Á, Xã Mỹ Hạnh Bắc, Huyện Đức Hoà, Tỉnh Long An, Việt Nam</td>
+    
+  </tr>
+  
+  <tr>
+    <td style=" background-color: #04AA6D;">SĐT</td>
+    <td>090 922 1888 (Mr. Nam)</td>
+    
+  </tr>
+  
+  <tr>
+    <td style=" background-color: #04AA6D;">EMAIL</td>    
+    <td>kynamsofis@gmail.com</td>
+   
+  </tr>
+  
+  <tr>
+    <td style=" background-color: #04AA6D;">WEBSITE</td>    
+    <td> www.southpacificfishery.com</td>
+   
+  </tr>
+  
+  <tr>
+    <td style=" background-color: #04AA6D;">STK</td>    
+    <td> 090 922 1888 NGÂN HÀNG BIDV</td>
+  </tr>
+  
+</table>
+
+ <p><b>3.Sản Phẩm</b></p>
+ 
+ <table id="ve_cty">
+
+ 
+  
+  <tr>
+    <td style=" background-color: #04AA6D;">BẠCH TUỘC</td>
+    <td><img src="img_mk4.jpg" style="width:100%"></td>
+    
+  </tr>
+  
+  <tr>
+    <td style=" background-color: #04AA6D;"> CÁ</td>
+    <td><img src="tuna4.jpg" style="width:100%">  </td>
+    
+  </tr>
+  
+  <tr>
+    <td style=" background-color: #04AA6D;">MỰC</td>    
+    <td> <img src="susi.jpg" style="width:100%"  ></td>
+   
+  </tr>
+  
+  <tr>
+    <td style=" background-color: #04AA6D;">TÔM</td>    
+    <td> <img src="tom_su.jpg" style="width:100%"></td>
+   
+  </tr>
+  
+  <tr>
+    <td style=" background-color: #04AA6D;">NGHÊU</td>    
+    <td>  <img src="img_mk1.jpg" style="width:100%"></td>
+  </tr>
+  
+   <tr>
+    <td style=" background-color: #04AA6D;">PHỐI TRỘN</td>    
+    <td>  <img src="tb_bc3.jpg" style="width:100%">  </td>
+  </tr>
+  
+</table>
+
+ <p><b>4.Thị Trường</b></p>
+ 
+ <table id="ve_cty">
+
+ 
+  
+  <tr>
+    <td style=" background-color: #04AA6D;">EU</td>
+    <td><img src="tuna1.jpg" style="width:100%"></td>
+    
+  </tr>
+  
+  <tr>
+    <td style=" background-color: #04AA6D;"> MỸ</td>
+    <td><img src="tuna9.jpg" style="width:100%">  </td>
+    
+  </tr>
+  
+  <tr>
+    <td style=" background-color: #04AA6D;">NHẬT</td>    
+    <td> <img src="susi.jpg" style="width:100%"  ></td>
+   
+  </tr>
+  
+  <tr>
+    <td style=" background-color: #04AA6D;">HÀN QUỐC</td>    
+    <td> <img src="tom_su.jpg" style="width:100%"></td>
+   
+  </tr>
+  
+  <tr>
+    <td style=" background-color: #04AA6D;">ÚC</td>    
+    <td>  <img src="img_mk6.jpg" style="width:100%"></td>
+  </tr>
+  
+   <tr>
+    <td style=" background-color: #04AA6D;">HỒNG KÔNG</td>    
+    <td>  <img src="img_mk3.jpg" style="width:100%">  </td>
+  </tr>
+  
+</table>
+
+ <p><b>5.Chứng Nhận</b></p>
+ 
+<table id="ve_cty"> 
+  
+  <tr>
+    <td style=" background-color: #04AA6D;">HACCP</td>    
+    <td> <img src="cn_haccp.jpg" style="width:100%"  ></td>   
+  </tr>
+  
+  <tr>
+    <td style=" background-color: #04AA6D;">BRC</td>    
+    <td> <img src="cn_brc.jpg" style="width:100%"></td>   
+  </tr>
+  
+  <tr>
+    <td style=" background-color: #04AA6D;">ISO22000:2018</td>    
+    <td>  <img src="cn_iso22000_2018.jpg" style="width:100%"></td>
+  </tr>
+  
+   <tr>
+    <td style=" background-color: #04AA6D;">HALAL</td>    
+    <td>  <img src="cn_hala.jpg" style="width:100%">  </td>
+  </tr>
+  
+</table> 
+ 
+<p><b>SOUTH PACIFIC FISHERY</b> mong muốn mang đến sự thịnh vượng cho doanh nghiệp
+ và sản phẩm tốt nhất đến người tiêu dùng. Vậy nên chúng tôi luôn chú trọng
+  hoàn thiện hệ thống máy móc, công nghệ, mang đến cho khách hàng dịch vụ hoàn
+   hảo với chi phí phải chăng. Qúy khách có thể liên hệ với chúng tôi qua địa chỉ:</p>
+   <div class="center_text">
+   <p><b>SOUTH PACIFIC FISHERY</b></p>
+<p>Địa chỉ: Lô LA1, Đường số 1, Khu công nghiệp và dân cư Xuyên Á, Xã Mỹ Hạnh Bắc, Huyện Đức Hoà, Tỉnh Long An, Việt Nam</p>
+<p>SĐT: 090 922 1888 (Mr. Nam)</p>
+<p>Email: kynamsofis@gmail.com </p>
+<p>Website: www.southpacificfishery.com</p>
+</div>
+ 
+</div>
+
+ <!-- TẦM NHÌN -->  
+
+<div id="muctieu" class="tabcontent">
+  <h3>TẦM NHÌN VÀ SỨ MỆNH</h3>
+  <p><b>1.MỤC TIÊU</b></p>
+  
+<p style="background-color: #009dc4">Phấn đấu trở thành công ty sản xuất <b>cá ngừ đại dương</b> chất lượng cao. Là nhà cung cấp uy tín và ổn định
+ các sản phẩm làm từ <b>cá ngừ đại dương</b> cho thị trường EU, Nhật.</p>
+ 
+ <img src="tin_cay.jpg" style="width:100%">
+ 
+ <p style="background-color: #009dc4">Hướng tới sản xuất bền vững</p>
+ 
+ <img src="phat_trien_bv.jpg" style="width:100%">
+ 
+<p><b>2.Trách Nhiệm</b></p>
+ 
+ <p style="background-color: #009dc4">Góp phần bảo vệ và phát triển tài nguyên biển</p>
+ 
+ <img src="bao_ve_tnb.jpg" style="width:100%">
+ <img src="bao_ve_tnb1.jpg" style="width:100%">
+ 
+ <p style="background-color: #009dc4"> Nâng cao đời sống vật chất và tinh thần cho nhân viên</p>
+ 
+ <img src="doi_song_vc.jpg" style="width:100%">
+ <img src="doi_song_vc1.jpg" style="width:100%">
+ 
+ <p style="background-color: #009dc4"> Không sử dụng chất cấm trong sản phẩm</p>
+  <img src="chat_cam.jpg" style="width:100%">
+
+<p><b>3.Thực Hiện</b></p>
+
+<p style="background-color: #009dc4">Không ngừng học hỏi đổi mới quy trình, thiết bị và công nghệ.</p>
+
+<img src="doimoi_qtcn.png" style="width:100%">
+ 
+<p style="background-color: #009dc4">Tối ưu hóa sản xuất.</p>
+ 
+<img src="san-xuat-tinh-gon.jpg" style="width:100%">
+
+<p><b>SOUTH PACIFIC FISHERY</b> mong muốn mang đến sự thịnh vượng cho doanh nghiệp
+ và sản phẩm tốt nhất đến người tiêu dùng. Vậy nên chúng tôi luôn chú trọng
+  hoàn thiện hệ thống máy móc, công nghệ, mang đến cho khách hàng dịch vụ hoàn
+   hảo với chi phí phải chăng. Qúy khách có thể liên hệ với chúng tôi qua địa chỉ:</p>
+   <div class="center_text">
+   <p><b>SOUTH PACIFIC FISHERY</b></p>
+<p>Địa chỉ: Lô LA1, Đường số 1, Khu công nghiệp và dân cư Xuyên Á, Xã Mỹ Hạnh Bắc, Huyện Đức Hoà, Tỉnh Long An, Việt Nam</p>
+<p>SĐT: 090 922 1888 (Mr. Nam)</p>
+<p>Email: kynamsofis@gmail.com </p>
+<p>Website: www.southpacificfishery.com</p>
+</div>
+
+</div>
+
+<!-- MÔI TRƯỜNG-->  
+
+<div id="moitruong" class="tabcontent">
+<h3>CÙNG NHAU BẢO VỆ MÔI TRƯỜNG</h3>
+
+<img src="mt1.jpg" style="width:100%">
+
+<p>Công ty luôn ý thức về trách nhiệm bảo vệ môi trường. Đăt điều này lên trên hết trong tất cả các hoạt động sản xuất 
+kinh doanh.</p>
+
+<p>Chúng tôi cam kết thực hiện luật bảo vệ môi trường và các quy định giảm tác động xấu đến môi trường
+ bằng cách sử dụng hiệu quả nguồn nguyên liệu, nước, điện. Đổi mới công nghệ nhằm giảm lượng nước thải 
+ và khí thải</p>
+
+<img src="mt3.jpg" style="width:100%">
+
+<p>Hành động bảo vệ môi trường:</p>
+ 
+<p>1. Thay thế các thiết bị công suất thấp, tiêu tốn nhìu năng lượng</p> 
+
+<p>2. Tái sử dụng đá và nước hợp lý</p> 
+
+<p>3. Tách riêng hệ thống nước thải và nước mưa</p> 
+
+<p>4. Nước thải được xử lý đến chuẩn B trước khi thải ra môi trường</p>
+
+<img src="mt2.jpg" style="width:100%">
+
+
+ 
+ 
+<p><b>SOUTH PACIFIC FISHERY</b> mong muốn mang đến sự thịnh vượng cho doanh nghiệp
+ và sản phẩm tốt nhất đến người tiêu dùng. Vậy nên chúng tôi luôn chú trọng
+  hoàn thiện hệ thống máy móc, công nghệ, mang đến cho khách hàng dịch vụ hoàn
+   hảo với chi phí phải chăng. Qúy khách có thể liên hệ với chúng tôi qua địa chỉ:</p>
+   <div class="center_text">
+   <p><b>SOUTH PACIFIC FISHERY</b></p>
+<p>Địa chỉ: Lô LA1, Đường số 1, Khu công nghiệp và dân cư Xuyên Á, Xã Mỹ Hạnh Bắc, Huyện Đức Hoà, Tỉnh Long An, Việt Nam</p>
+<p>SĐT: 090 922 1888 (Mr. Nam)</p>
+<p>Email: kynamsofis@gmail.com </p>
+<p>Website: www.southpacificfishery.com</p>
+</div>
+ 
+</div>
+
+<!-- HOẠT ĐỘNG -->  
+
+<div id="hoatdong" class="tabcontent">
+<h3 >Hình Ảnh Công Ty</h3>
+
+<div class="slideshow-container ">
+
+<div class="mySlides fade1">
+  <div class="numbertext">1 / 7</div>
+  <img class="img_slideshow" src="img_tbd1.jpg" >
+  <div class="text">Caption one</div>
+</div>
+
+<div class="mySlides fade2">
+  <div class="numbertext">2 / 7</div>
+  <img class="img_slideshow" src="img_tbd2.jpg" >
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade3">
+  <div class="numbertext">3 / 7</div>
+  <img class="img_slideshow" src="img_tbd3.jpg" >
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade4">
+  <div class="numbertext">4 / 7</div>
+  <img class="img_slideshow" src="img_tbd4.jpg">
+  <div class="text">Caption Four</div>
+</div>
+
+<div class="mySlides fade5">
+  <div class="numbertext">5 / 7</div>
+  <img class="img_slideshow" src="img_tbd5.jpg" >
+  <div class="text">Caption Five</div>
+</div>
+
+<div class="mySlides fade6">
+  <div class="numbertext">6 / 7</div>
+  <img class="img_slideshow" src="img_tbd6.jpg" >
+  <div class="text">Caption Six</div>
+</div>
+
+<div class="mySlides fade7">
+  <div class="numbertext">7 / 7</div>
+  <img class="img_slideshow" src="img_tbd7.jpg" >
+  <div class="text">Caption Seven</div>
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+   <span class="dot"></span> 
+    <span class="dot"></span> 
+     <span class="dot"></span> 
+      <span class="dot"></span> 
+</div>
+
+
+ 
+ 
+<p><b>SOUTH PACIFIC FISHERY</b> mong muốn mang đến sự thịnh vượng cho doanh nghiệp
+ và sản phẩm tốt nhất đến người tiêu dùng. Vậy nên chúng tôi luôn chú trọng
+  hoàn thiện hệ thống máy móc, công nghệ, mang đến cho khách hàng dịch vụ hoàn
+   hảo với chi phí phải chăng. Qúy khách có thể liên hệ với chúng tôi qua địa chỉ:</p>
+   <div class="center_text">
+   <p><b>SOUTH PACIFIC FISHERY</b></p>
+<p>Địa chỉ: Lô LA1, Đường số 1, Khu công nghiệp và dân cư Xuyên Á, Xã Mỹ Hạnh Bắc, Huyện Đức Hoà, Tỉnh Long An, Việt Nam</p>
+<p>SĐT: 090 922 1888 (Mr. Nam)</p>
+<p>Email: kynamsofis@gmail.com </p>
+<p>Website: www.southpacificfishery.com</p>
+</div>
+ 
+</div>
+
+<!--NĂNG SUẤT -->  
+
+<div id="nangsuat" class="tabcontent">
+<h3>NĂNG LỰC NHÀ MÁY</h3>
+
+<table id="ve_cty"> 
+
+   <tr>
+    <th>TÊN THIẾT BỊ</th>
+    <th>NĂM LẮP ĐẶT</th>
+    <th>NHÀ SẢN SUẤT</th>
+    <th>NĂNG SUẤT</th>
+  </tr>
+  
+  <tr>
+    <td>BĂNG CHUYỀN</td>    
+    <td>2021</td>
+    <td>PHƯƠNG NAM, VN</td>
+    <td>500KG/H</td>       
+  </tr>
+  
+  <tr>
+    <td>HẦM ĐÔNG</td>    
+    <td>2021</td>
+    <td>PHƯƠNG NAM, VN</td>
+    <td>2000KG/6H/MẺ</td>       
+  </tr>
+  
+  <tr>
+    <td>KHO LẠNH</td>    
+    <td>2021</td>
+    <td>PHƯƠNG NAM, VN</td>
+    <td>700TON</td>       
+  </tr>
+  
+  <tr>
+    <td>ĐÁ VẨY</td>    
+    <td>2021</td>
+    <td>PHƯƠNG NAM, VN</td>
+    <td>50KG/H</td>       
+  </tr>
+  
+  
+  
+  
+  
+</table> 
+
+ 
+ 
+<p><b>SOUTH PACIFIC FISHERY</b> mong muốn mang đến sự thịnh vượng cho doanh nghiệp
+ và sản phẩm tốt nhất đến người tiêu dùng. Vậy nên chúng tôi luôn chú trọng
+  hoàn thiện hệ thống máy móc, công nghệ, mang đến cho khách hàng dịch vụ hoàn
+   hảo với chi phí phải chăng. Qúy khách có thể liên hệ với chúng tôi qua địa chỉ:</p>
+   <div class="center_text">
+   <p><b>SOUTH PACIFIC FISHERY</b></p>
+<p>Địa chỉ: Lô LA1, Đường số 1, Khu công nghiệp và dân cư Xuyên Á, Xã Mỹ Hạnh Bắc, Huyện Đức Hoà, Tỉnh Long An, Việt Nam</p>
+<p>SĐT: 090 922 1888 (Mr. Nam)</p>
+<p>Email: kynamsofis@gmail.com </p>
+<p>Website: www.southpacificfishery.com</p>
+</div>
+ 
+</div>
+
+
+<!--  NHÂN SỰ -->
+
+<div id="nhansu" class="tabcontent">
+<h3>CÙNG NHAU TIẾN BỘ</h3>
+<p>Là một công ty trong lĩnh vực xuất khẩu thủy sản, đặc biệt mặt hàng chủ lực của công ty <b>cá ngừ đại dương</b>
+chất lượng cao. Nên ngay từ ban đầu ban lãnh đạo công ty đã xác định nhân tố tạo nên sự thành công của công ty 
+chính là sự hợp tác của đội ngủ nhân viên tài năng, nhiệt tình, năng động và sáng tạo. Tạo nên sự thành công của công ty
+ đồng thời mang đến những sản phẩm chất lượng cao cho khách hàng</p>
+ 
+ <img src="cs_ns1.jpg" style="width:100%">
+ 
+ <p style="background-color: #009dc4">Trở thành nhân viên của chúng tôi nếu bạn muốn:</p>
+ 
+ <p>Làm việc trong môi trường sản suất và kinh doanh năng động, cùng với sự hướng dẫn và giúp đỡ của mọi người. 
+ Điều này giúp bạn phát triển khả năng và tích lũy kinh nghiệm cho bản thân một cách liên tục.</p>
+
+<img src="cs_ns2.jpg" style="width:100%">
+
+<p>Chúng tôi xây dựng môi trường làm việc tương tác, đề cao sự hợp tác, đồng thời khuyến khích sự sáng tạo.</p>
+ 
+<p>Chúng tôi sẽ nâng cao khả năng của bạn, đánh giá bạn qua mỗi công việc được giao.</p>
+
+<img src="cs_ns3.jpg" style="width:100%">
+
+<p style="background-color: #009dc4">Đào tạo và cơ hội nghề nghiệp.</p>
+
+<p>Với những thách thách của quá trình toàn cầu hóa. Chúng tôi chú trọng nâng cao kỹ năng cho nhân viên. 
+Tùy vào bộ phận chúng tôi sẽ có nhũng chương trình đạo tạo phù hợp:</p>
+
+<img src="cs_ns5.jpg" style="width:100%">
+
+<p>- Văn phòng: tham gia các lớp đào tạo về quản lý nhân sự, .</p>
+ 
+<p>- Sản suất: tham gia các lớp đào tạo về quản lý chất lượng, nâng cao tay nghề .</p>
+ 
+ <p style="background-color: #009dc4">Lương và thưởng</p>
+ 
+ <img src="cs_ns4.jpg" style="width:100%">
+ 
+ <p>Lương và thưởng dựa trên năng lực và hiệu quả công việc. Bên cạnh đó còn có những chế độ sau:</p>
+ 
+ <p>- Quyền lợi theo luật lao động.</p>
+ 
+ <p>- Khám sức khỏe định kỳ.</p>
+ 
+ <p>- Tham gia bảo hiểm xã hội.</p>
+ 
+<p><b>SOUTH PACIFIC FISHERY</b> mong muốn mang đến sự thịnh vượng cho doanh nghiệp
+ và sản phẩm tốt nhất đến người tiêu dùng. Vậy nên chúng tôi luôn chú trọng
+  hoàn thiện hệ thống máy móc, công nghệ, mang đến cho khách hàng dịch vụ hoàn
+   hảo với chi phí phải chăng. Qúy khách có thể liên hệ với chúng tôi qua địa chỉ:</p>
+   <div class="center_text">
+   <p><b>SOUTH PACIFIC FISHERY</b></p>
+<p>Địa chỉ: Lô LA1, Đường số 1, Khu công nghiệp và dân cư Xuyên Á, Xã Mỹ Hạnh Bắc, Huyện Đức Hoà, Tỉnh Long An, Việt Nam</p>
+<p>SĐT: 090 922 1888 (Mr. Nam)</p>
+<p>Email: kynamsofis@gmail.com </p>
+<p>Website: www.southpacificfishery.com</p>
+</div>
+ 
+</div>
+
+
+<!--  CHẤT LƯỢNG-->
+
+<div id="chatluong" class="tabcontent">
+
+<h3>CHẤT LƯỢNG LÀ DANH DỰ</h3>
+
+ <p>Chất lượng là yếu tố quan trọng nhất giúp công ty giữ vững thị trường xuất khẩu <b>cá ngừ đại dương.</b> 
+ Trên cơ sở đó chúng tui đã áp dụng hệ thống quản lý chất lương iso 9001:2015</p>
+ 
+ <img src="cs_cl1.png" style="width:100%">
+ 
+ <p>Để duy trì chất lượng ổn định cần có sự phối hợp của cả hệ thống. Trên tình thần mỗi nhân viên 
+ sản suất là là một QC.</p>
+ 
+ <p>Hoạt động đào và đẩu tư cho hệ thống quản lý chất lượng:</p>
+ 
+  <p>-Cho QC tham gia các lớp học về quản lý chất lượng bằng  iso </p>
+  
+   <img src="cs_cl3.jpg" style="width:100%">
+  
+  <p>-Thường xuyên tập huấn cho công nhân sản xuất về các quy trình công nghệ mới </p>
+  
+  <img src="cs_cl2.jpg" style="width:100%">
+  
+  <p>-Không ngừng cải học hỏi cải tiến hệ thống phù hợp với thực tế </p>
+  
+  <p>-Đầu tư  thiết bị hiện đại để nâng cao năng lực quản lý chất lượng</p>
+  
+  <img src="cs_cl4.jpg" style="width:100%">
+ 
+ 
+<p><b>SOUTH PACIFIC FISHERY</b> mong muốn mang đến sự thịnh vượng cho doanh nghiệp
+ và sản phẩm tốt nhất đến người tiêu dùng. Vậy nên chúng tôi luôn chú trọng
+  hoàn thiện hệ thống máy móc, công nghệ, mang đến cho khách hàng dịch vụ hoàn
+   hảo với chi phí phải chăng. Qúy khách có thể liên hệ với chúng tôi qua địa chỉ:</p>
+   <div class="center_text">
+   <p><b>SOUTH PACIFIC FISHERY</b></p>
+<p>Địa chỉ: Lô LA1, Đường số 1, Khu công nghiệp và dân cư Xuyên Á, Xã Mỹ Hạnh Bắc, Huyện Đức Hoà, Tỉnh Long An, Việt Nam</p>
+<p>SĐT: 090 922 1888 (Mr. Nam)</p>
+<p>Email: kynamsofis@gmail.com </p>
+<p>Website: www.southpacificfishery.com</p>
+</div>
+ 
+</div>
+
+
+
+</div>
+
+<!-- SIDE -->  
+ 
+   <div class="side1">
+   
+  </div>
+
+ </div>
+  
+ </div>
+ 
+ <!-- SOCIAL MEDIA-->  
+ 
+<div class="flex-container1">
+<a href="https://www.facebook.com/profile.php?id=100008753262768" target="_blank" class="fa1 fa fa-facebook"></a>
+<a href="#" class="fa1 fa fa-twitter"></a>
+<a href="#" class="fa1 fa fa-google"></a>
+<a href="#" class="fa1 fa fa-linkedin"></a>
+<a href="#" class="fa1 fa fa-youtube"></a>
+<a href="https://zalo.me/0938608832" target="_blank" class="fa" ><img class="iconviet" src="zalo_logo.jpg"></a>
+ 
+ </div> 
+
+<!-- TÌM KIẾM-->  
+
+<script src="tim.js"></script>
+
+<!-- TOP BUTTON-->  
+
+<script src="thiet_bi1.js"></script>
+
+<!-- Tạo thiết bị chi tiết -->  
+
+ <script src="thiet_bi.js"></script>
+ 
+ <!-- SHOWSLIDES -->  
+ 
+ <script src="showslides.js"></script>
+ 
+ <!-- // LƯU BIẾN THIẾT BỊ -->
+  
+  <script>
+function myFunction(event) { 
+	 
+	  
+	  sessionStorage.setItem("thiet_bi", event.currentTarget.id);
+	}
+
+</script>
+
+<!-- // LƯU BIẾN VỀ SẢN PHẨM-->
+
+ <script>
+function open_sanpham(event) { 	 
+	  
+	  sessionStorage.setItem("san_pham", event.currentTarget.id);
+	 
+	  console.log(sessionStorage.getItem("san_pham"));
+	}
+
+</script>
+
+<!-- // LƯU BIẾN VỀ CHỨNG NHẬN-->
+
+ <script>
+function open_chung_nhan(event) { 	 
+	  
+	  sessionStorage.setItem("chung_nhan", event.currentTarget.id);
+	 
+	  console.log(sessionStorage.getItem("chung_nhan"));
+	}
+
+</script>
+
+ <!-- VỀ CÔNG TY -->  
+  
+  <script src="open_vecty.js"> </script>
+  
+  
+<!-- // FILTER -->
+
+<script>
+function myFunction1() {
+    var input, filter, ul, li, a, i, txtValue, modal, span;
+    modal = document.getElementById("myModal1");
+    modal.style.display="block";
+    input = document.getElementById("tim_kiem");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+  
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+    
+    span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+}
+</script>
+  
+ 
+ 
+ 
+
+</body>
+</html>

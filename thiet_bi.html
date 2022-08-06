@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta  charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="thiet_bi.css">
+
+<title>TRANG CHỦ</title>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>	
+
+<!-- FLIP BOX -->
+
+<div class="flex-container">
+ 
+
+   
+  <div id= "hoa" class="flex-item">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="logo2.png" alt="Paris" style="width:100%;height:100%">
+    </div>
+    <div class="flip-box-back">
+    
+      <h2>Chất Lượng</h2>
+      <p> Là Danh Dự</p>
+    </div>
+  </div>
+</div>
+  
+   <input id="tim_kiem" onkeyup="myFunction1()" class= "flex-item" type="search">	
+    
+    <div id="myModal1" class="modal">
+<span class="close">&times;</span>
+<ul class="modal-content" id="myUL">
+  <li><a href="design.html">Trang Chủ  </a></li>
+  <li><a href="ve_cty.html">Giới Thiệu</a></li>
+
+  <li><a href="thiet_bi.html">Thiết Bị</a></li>
+  <li><a href="san_pham.html">Sản Phẩm</a></li>
+
+  <li><a href="chung_nhan.html">Chứng Nhận</a></li>
+  <li><a href="LienHe.html">Liên Hệ</a></li>
+  
+</ul>
+</div>			
+   <button class= "flex-item" type="button" onclick="tim()"><i class="fa fa-fw fa-search"></i> Search</button> 				
+   <button class= "flex-item" type="button"><i class="fa fa-fw fa-user"></i>Login</button>			
+	
+	
+  
+   
+</div> 
+
+<!-- Tạo Navibar -->
+
+<ul  id="navbar" class="flex-container b_color">
+ 
+
+   
+   
+  
+ 
+  <li><a class="flex-item" href="design.html"><i class="fa fa-fw fa-home" ></i></a>  </li>
+  
+  
+  <!-- GIỚI THIỆU -->
+  
+  <li class="dropdown">
+    <a href="ve_cty.html" class="flex-item dropbtn">GIỚI THIỆU</a>
+  <div class="dropdown-content">
+    
+     <a  id="nhamay" href="ve_cty.html" target="_self" onclick="open_vecty(event)" class="flex-item " >
+         <div>       
+    <img src="profile.jpg" class="img_thietbi">
+    <p>NHÀ MÁY</p> 
+        </div>      
+      </a>        
+      
+       
+       <a  id="muctieu" href="ve_cty.html" target="_self" onclick="open_vecty(event)" class="flex-item ">
+         <div>
+  <img src="tn_sm.jpg"  class="img_thietbi" >
+  <p>MỤC TIÊU</p>
+          </div>        
+       </a>
+       
+       
+      <a  id="moitruong" href="ve_cty.html" target="_self" onclick="open_vecty(event)" class="flex-item ">       
+         <div>
+   <img src="cs_mt.jpg" class="img_thietbi" >  
+   <p>MÔI TRƯỜNG</p>  
+        </div>       
+      </a>
+       
+      
+      <a id="hoatdong" href="ve_cty.html" target="_self" onclick="open_vecty(event)" class="flex-item ">       
+         <div>
+   <img src="hd_ct.jpg" class="img_thietbi" >  
+   <p>HOẠT ĐỘNG</p>  
+        </div>       
+      </a>  
+      
+      
+      <a  id="nangsuat" href="ve_cty.html" target="_self" onclick="open_vecty(event)" class="flex-item ">       
+         <div>
+   <img src="ns_nm.jpg" class="img_thietbi" >  
+   <p>NĂNG SUẤT</p>  
+        </div>       
+      </a> 
+      
+      
+      <a  id="nhansu" href="ve_cty.html" target="_self" onclick="open_vecty(event)" class="flex-item ">       
+         <div>
+   <img src="cs_ns.jpg" class="img_thietbi" >  
+   <p>NHÂN SỰ</p>  
+        </div>       
+      </a> 
+      
+      <a  id="chatluong" href="ve_cty.html" target="_self" onclick="open_vecty(event)" class="flex-item ">       
+         <div>
+   <img src="cs_cl.jpg" class="img_thietbi" >  
+   <p>CHẤT LƯỢNG</p>  
+        </div>       
+      </a>      
+    </div>
+ </li>
+ 
+ 
+  <!-- THIẾT BỊ --> 
+  
+ <li class="dropdown">
+    <a style="background-color: Aqua" href="#thiet_bi" class="flex-item dropbtn">THIẾT BỊ</a>
+    <div class="dropdown-content">
+    
+     
+     
+     <a onclick="myFunction(event)" id="dan_may" class="flex-item " href="thiet_bi1.html" target="_self">
+         <div>       
+    <img src="img6.jpg" class="img_thietbi">
+    <p>Dàn Máy</p> 
+        </div>      
+      </a>        
+      
+       
+       <a onclick="myFunction(event)" id="bang_chuyen" class="flex-item " href="thiet_bi1.html">
+         <div>
+  <img src="tb_bc.jpg"  class="img_thietbi" >
+  <p>Băng Chuyền</p>
+          </div>        
+       </a>
+       
+      <a onclick="myFunction(event)" id="ham_dong" class="flex-item " href="thiet_bi1.html" target="_self">       
+         <div>
+   <img src="tb_hdg.png" class="img_thietbi" >  
+   <p>Hầm Đông</p>  
+        </div>       
+      </a>
+      
+        
+      <a onclick="myFunction(event)" id="kho_lanh" class="flex-item " href="thiet_bi1.html" target="_self">       
+         <div>
+   <img src="kl.jpeg" class="img_thietbi" >  
+   <p>Kho Lạnh</p>  
+        </div>       
+      </a>         
+       
+       
+      
+    </div>
+  </li>
+   <!-- SẢN PHẨM -->
+  
+ <li class="dropdown">
+    <a href="san_pham.html" class="flex-item dropbtn">SẢN PHẨM</a>
+    <div class="dropdown-content">
+    <a onclick="open_sanpham(event)" id="yellowfin_tuna" class="flex-item " href="san_pham.html" target="_self">
+         <div>       
+    <img src="tuna2.jpg" class="img_thietbi">
+    <p>Cá Ngừ</p> 
+        </div>      
+      </a>        
+      
+       
+       <a onclick="open_sanpham(event)" id="co_tuna" class="flex-item " href="san_pham.html" target="_self">
+         <div>
+  <img src="tuna12.jpg"  class="img_thietbi" >
+  <p>Cá Ngừ</p>
+          </div>        
+       </a>
+       
+      <a onclick="open_sanpham(event)" id="layang_scad" class="flex-item " href="san_pham.html" target="_self">
+         <div>
+  <img src="tuna5.jpg"  class="img_thietbi" >
+  <p>Cá Ngừ</p>
+          </div>        
+       </a>
+      
+        
+     <a onclick="open_sanpham(event)" id="cuttle_fish" class="flex-item " href="san_pham.html" target="_self">
+         <div>
+  <img src="susi.jpg"  class="img_thietbi" >
+  <p>SuSi</p>
+          </div>        
+       </a> 
+        
+      
+       
+       
+      
+    </div>
+  </li>
+  
+  
+   <!-- CHỨNG NHẬN-->
+  
+ <li class="dropdown">
+    <a href="chung_nhan.html" class="flex-item dropbtn">CHỨNG NHẬN</a>
+    <div class="dropdown-content">
+    <a onclick="open_chung_nhan(event)" id="cn_haccp" class="flex-item " href="chung_nhan.html" target="_self">
+         <div>       
+    <img src="cn_haccp.jpg" class="img_thietbi">
+    <p>HACCP</p> 
+        </div>      
+      </a>        
+      
+       
+       <a onclick="open_chung_nhan(event)" id="cn_brc" class="flex-item " href="chung_nhan.html" target="_self">
+         <div>
+  <img src="cn_brc.jpg"  class="img_thietbi" >
+  <p>BRC</p>
+          </div>        
+       </a>
+       
+      <a onclick="open_chung_nhan(event)" id="cn_iso" class="flex-item " href="chung_nhan.html" target="_self">
+         <div>
+  <img src="cn_iso22000_2018.jpg"  class="img_thietbi" >
+  <p>ISO22000_2018</p>
+          </div>        
+       </a>
+      
+        
+     <a onclick="open_chung_nhan(event)" id="cn_hala" class="flex-item " href="chung_nhan.html" target="_self">
+         <div>
+  <img src="cn_hala.jpg"  class="img_thietbi" >
+  <p>HALA</p>
+          </div>        
+       </a> 
+        
+      
+       
+       
+      
+    </div>
+  </li>
+  <li><a class="flex-item" href="LienHe.html">LIÊN HỆ</a> </li>
+ 	
+	
+  
+   
+</ul> 
+<div class="content">
+
+<div class="row">
+
+<!-- SIDE-->
+
+
+  <div class="side">
+   
+  </div>
+  
+  <!-- MAIN -->
+  
+<div class="main">
+                <div class="row1 ">
+                 <button class="tablinks" onclick="openCity(event, 'danmay')">
+         <div>
+             <img src="tb_hdg.png" class="img_thietbi"   >
+             <p>HẦM ĐÔNG GIÓ</p>
+         </div>
+  </button>
+  
+  <button class="tablinks" onclick="openCity(event, 'maynen')">
+         <div>
+             <img src="img6.jpg" class="img_thietbi"  >
+             <p>MÁY NÉN MYCOM</p>
+         </div>
+  </button>
+  
+   
+  <button class="tablinks" onclick="openCity(event, 'danlanh')">
+         <div>
+             <img src="coi_davay.png" class="img_thietbi"  >
+             <p>CỐI ĐÁ</p>
+         </div>
+  </button>
+  
+  <button class="tablinks" onclick="openCity(event, 'bangchuyen')">
+         <div>
+             <img src="tb_bc.jpg" class="img_thietbi"  >
+             <p>BĂNG CHUYỀN</p>
+         </div>
+  </button>
+  
+  
+  
+  
+  
+                </div> 
+            <!-- Tạo thiết bị chi tiết -->    
+            
+            
+            <!-- HẦM ĐÔNG GIÓ -->  
+                
+                <div id="danmay" class="tabcontent">
+  <h3>HẦM ĐÔNG GIÓ</h3>
+  <p><b>1.ĐẶC ĐIỂM </b></p>
+   <img src="tb_hdg2.jpg" class="img_thietbi1"  >
+<p><b>•</b> Cho chất lượng sản phẩm cao. Thời gian cấp đông nhanh.</p>
+<p><b>•</b> Tiết kiệm năng lượng.</p>
+<p><b>•</b>Cấp đông cho các sản phẩm như tôm, cá, thịt và các mặt hàng khác.</p>
+<p><b>•</b> Sản phẩm đông phù hợp cho các tiêu chuẩn HACCP/FDA.</p>
+
+<p>Vách và trần được lắp ghép bằng panel Polyurethane (hoặc panel polystyrenen), 
+hai mặt bọc bằng tole colorbond (hoặc inox) và có cán sóng.
+Nền cách nhiệt bằng foam polyurethane (polystyrene), trên lớp cách nhiệt đổ betong cốt thép.
+Sản phẩm được xếp trên các khay và xếp vào các xe đẩy.
+Dàn lạnh kiểu đặt trên sàn và xả đá bằng nước (hoặc gas nóng), mỗi dàn có 4 quạt loại hướng trục. 
+Số lượng dàn lạnh phụ thuộc vào công suất cấp đông.</p>
+
+<p><b>2.NGUYÊN LÝ HOẠT ĐỘNG</b></p>
+<img src="tb_hdg4.jpg" class="img_thietbi1"  >
+  <p>Nguyên lý cấp đông của hầm là làm lạnh không khí đối lưu cưỡng bức. Sản phẩm cấp đông dạng Block hay dạng
+   rời đặt trong các khay và chất lên các xe cấp đông.</p>
+  <p>– Nhiệt độ hầm -35 ÷ -45 <sup>o</sup>C </p>
+ <p>– Thời gian cấp đông: đối với sản phẩm rời khoảng 3 ÷ 5 giờ,
+  sản phẩm block khoảng 7 ÷ 9 giờ (ngoài ra thời gian cấp đông còn tùy thuộc vào công suất máy được chọn).</p>
+
+ <p>– Dàn lạnh cấp đông có thể đặt dưới nền hay treo trên cao tùy thuộc vào công suất hầm.
+  Đối với hầm công suất lớn chọn giải pháp dàn lạnh đặt nền vì dàn lớn và nặng. Đối với hầm công suất nhỏ dàn lạnh được treo trần.</p>
+
+ <p>– Cửa hầm loại cửa trược, kích thước cửa: 1500Wx2000Hx125T, 
+ cách nhiệt PU bên ngoài bọc Inox 304, khung bao có điện trở sưởi,
+  ổ khóa tay nắm bản lề Inox 304, joăng làm kín có khả năng chịu lạnh cao.</p>
+
+ <p>– Trong hầm bố trí trần tuần hoàn gió đảm bảo gió được lưu thông đều trong hầm.</p>
+ 
+ <p><b>3.XE VÀ KHAY CẤP ĐÔNG</b></p>
+ 
+ <img src="tb_hdg1.jpg" class="img_thietbi1"  >
+ 
+ <p>– Kích thước chuẩn xe cấp đông: 800W x 1200L x 1380H, sức chứa 500kg, xe được làm bằng Inox.</p>
+
+<p>– Kích thước chuẩn khay cấp đông: 555W x 795L x 54H, vật liệu nhôm, dày 2mm.</p>
+
+<p>– Tiết kiêm điện năng do hệ thống lạnh được thiết kế tối ưu, phần buồn đông được
+ cách nhiệt bằng polyurethane có tỷ trọng cao, hệ số truyền nhiệt thấp.</p>
+
+<p>– Mặt trong và mặt ngoài hầm đông gió bằng Inox SUS 304 chống rỉ sét, có độ bền cao.
+
+<p>– Áp dụng công nghệ mới, sử dụng keo dính vĩnh viễn trong công nghệ sản
+ suất panel polyurethane cách nhiệt có vật liệu phủ ngoài bằng Inox, loại
+  bỏ hiện tượng bề mặt Inox tách rời foam polyurethane trong quá trình làm việc ở nhiệt độ âm sâu.</p>
+
+<p>– Cửa trượt bằng Inox được chế tạo theo thiết kế hoàn toàn mới, có độ an toàn – độ bền – độ tin cậy cao và kiếu dáng đẹp.</p>
+
+<p>– Hầm đông gió được trang bị đồng bộ xe đẩy hàng có bánh xe chịu nhiệt độ âm sâu và khay đựng
+
+ sản phẩm bằng Inox.</p>
+ 
+<p><b>SOUTH PACIFIC FISHERY</b> mong muốn mang đến sự thịnh vượng cho doanh nghiệp
+ và sản phẩm tốt nhất đến người tiêu dùng. Vậy nên chúng tôi luôn chú trọng
+  hoàn thiện hệ thống máy móc, công nghệ, mang đến cho khách hàng dịch vụ hoàn
+   hảo với chi phí phải chăng. Qúy khách có thể liên hệ với chúng tôi qua địa chỉ:</p>
+   
+   <div class="center_text">
+   <p><b>SOUTH PACIFIC FISHERY</b></p>
+<p>Địa chỉ: Lô LA1, Đường số 1, Khu công nghiệp và dân cư Xuyên Á, Xã Mỹ Hạnh Bắc, Huyện Đức Hoà, Tỉnh Long An, Việt Nam</p>
+<p>SĐT: 090 922 1888 (Mr. Nam)</p>
+<p>Email: kynamsofis@gmail.com </p>
+<p>Website: www.southpacificfishery.com</p>
+</div>
+ 
+</div>
+
+<!-- MÁY NÉN -->  
+
+<div id="maynen" class="tabcontent">
+  <h3>MÁY NÉN MYCOM 500HP</h3>
+ <p><b>SOUTH PACIFIC FISHERY</b> sử dụng máy nén làm lạnh
+  MYCOM - Nhật Bản là trái tim của hệ thống cấp lạnh cho kho.
+   Với công nghệ Nhật Bản, công ty lắp đặt hệ thống lạnh là 5 máy nén MYCOM 500HP.</p> 
+  <img src="img10.jpg" class="img_thietbi1"   > 
+  MÁY NÉN TRỤC VÍT 2 CẤP  MYCOM 
+
+<p>Các tính năng máy nén 2 cấp:</p>
+
+<p>Số lượng: 5 bộ</p>
+
+<p>Nước sản xuất: Nhật Bản</p>
+
+<p>Công suất: 568 KW/ 1 bộ</p>
+
+<p>Tổng công suất: 2840 KW</p>
+
+<p>Năm sản xuất: 2016</p>
+
+<p>Hệ thống nén 2 cấp, trong đó có hai đơn vị máy nén trục vít tiêu chuẩn cho phương án của nó,
+ giờ đây có thể được thực hiện bằng một đơn vị máy nén khí trục vít 2 tầng</p>
+ 
+<p> Thông thường, máy nén trục vít sử dụng phun dầu để giữ nhiệt độ xả ở mức thấp
+  trong quá trình vận hành mà không làm giảm hiệu suất thể tích ngay cả ở tỷ số nén cao.
+   Do đó, nó có thể được vận hành với hệ thống nén một cấp ngay cả ở nhiệt độ bay hơi gần -40 ° C.</p>
+   
+<p> Máy nén trục vít 2 tầng này được sản xuất để giải quyết vấn đề này.
+    Nó là một đơn vị có hai đơn vị máy nén một cấp kết hợp thành một.</p>
+    
+ <p> Model 2016 ** C có cơ chế kiểm soát công suất để giảm tải khởi động ở giai đoạn cao
+     và cơ chế kiểm soát công suất để đối phó với thay đổi tải ở giai đoạn thấp.</p>
+     
+     <img src="img11.jpg" class="img_thietbi1"   > 
+     
+ <p><b>SOUTH PACIFIC FISHERY</b> mong muốn mang đến sự thịnh vượng cho doanh nghiệp
+ và sản phẩm tốt nhất đến người tiêu dùng. Vậy nên chúng tôi luôn chú trọng
+  hoàn thiện hệ thống máy móc, công nghệ, mang đến cho khách hàng dịch vụ hoàn
+   hảo với chi phí phải chăng. Qúy khách có thể liên hệ với chúng tôi qua địa chỉ:</p>
+   <div class="center_text">
+   <p><b>SOUTH PACIFIC FISHERY</b></p>
+<p>Địa chỉ: Lô LA1, Đường số 1, Khu công nghiệp và dân cư Xuyên Á, Xã Mỹ Hạnh Bắc, Huyện Đức Hoà, Tỉnh Long An, Việt Nam</p>
+<p>SĐT: 090 922 1888 (Mr. Nam)</p>
+<p>Email: kynamsofis@gmail.com </p>
+<p>Website: www.southpacificfishery.com</p>
+     
+      
+</div>   
+</div>
+
+<!-- CỐI ĐÁ VẨY -->  
+
+<div id="danlanh" class="tabcontent">
+  <h3>CỐI ĐÁ VẨY</h3>
+  
+  <p><b>1.THÔNG TIN CHUNG</b></p>
+  
+  
+  <p>Đá vẩy là các mảnh nhỏ với phiến đá mỏng, dày khoảng 2mm được đóng băng ở nhiệt độ -9<sup>o</sup>
+  C và được cắt tự động bởi máy làm đá vẩy giúp tạo ra những phiến đá mỏng và khô.</p>
+   
+   
+   
+   <img src="coi_davay2.png" class="img_thietbi1" >
+   
+  <p> Đáp ứng đầy đủ tiêu chuẩn đá sạch, khô và nhiệt độ đá phù hợp tiêu chuẩn HACCP.</p>
+   
+   
+   <p><b>2.THÔNG SỐ KỸ THUẬT:</b></p>
+    <img src="coi_davay1.png" class="img_thietbi1" >
+
+<p>– Nhiệt độ nước vào làm đá : + 15 <sup>o</sup>C to + 20 <sup>o</sup>C.</p>
+<p>– Nhiệt độ đá vảy : -2<sup>o</sup>C.</p>
+<p>– Chiều dày đá vảy : 1,6 to 2,3 mm.</p>
+<p>– Vật liệu bề mặt trong làm đá : Inox AISI 304 (phù hợp tiêu chuẩn HACCP).</p>
+<p>– Vật liệu dao cắt đá : Inox AISI 304 (phù hợp tiêu chuẩn HACCP).</p>
+<p>– Kiểu dao cắt đá : Dao Inox – xoay kiểu vệ tinh.</p>
+<p>– Bề mặt ngoài cối : Thép mạ màu carbon steel material hoặc Inox 304.</p>
+<p>– Bộ điều tốc : Truyền động bánh răng.</p>
+<p>– Nguồn điện : 380V/3PH/50HZ
+<p>– Môi chất lạnh :  NH3.</p>
+<p>– Công suất làm đá vẩy nước ngọt từ 1 tấn đến 40 tấn/24 giờCác tấm trao đổi 
+nhiệt bằng nhôm đùn chuyên dùng trong công nghệ chế biến thực phẩm.</p>
+   
+  
+
+<p><b>SOUTH PACIFIC FISHERY</b> mong muốn mang đến sự thịnh vượng cho doanh nghiệp
+ và sản phẩm tốt nhất đến người tiêu dùng. Vậy nên chúng tôi luôn chú trọng
+  hoàn thiện hệ thống máy móc, công nghệ, mang đến cho khách hàng dịch vụ hoàn
+   hảo với chi phí phải chăng. Qúy khách có thể liên hệ với chúng tôi qua địa chỉ:</p>
+   <div class="center_text">
+   <p><b>SOUTH PACIFIC FISHERY</b></p>
+<p>Địa chỉ: Lô LA1, Đường số 1, Khu công nghiệp và dân cư Xuyên Á, Xã Mỹ Hạnh Bắc, Huyện Đức Hoà, Tỉnh Long An, Việt Nam</p>
+<p>SĐT: 090 922 1888 (Mr. Nam)</p>
+<p>Email: kynamsofis@gmail.com </p>
+<p>Website: www.southpacificfishery.com</p>
+</div>
+</div>
+
+<!-- BĂNG CHUYỀN -->  
+
+<div id="bangchuyen" class="tabcontent">
+
+ <h3>Băng Chuyền</h3>
+  <div class="row1 huong_nhin ">
+   <img src="tb_bc4.jpg" class="img_thietbi"  >
+    <img src="tb_bc1.jpg" class="img_thietbi"  >
+    <img src="tb_bc2.jpg" class="img_thietbi"  >
+    <img src="tb_bc3.jpg" class="img_thietbi"  >
+   
+  </div>
+ <p><b>Giới Thiệu</b></p>
+ <p>Dàn bố trí trên các băng chuyền, thổi gió lạnh lên bề mặt băng chuền khi có sản phẩm.
+  Vỏ bao che bằng polyurethan dày 150mm, bọc hai mặt inox. Nhờ dạng băng chuyền phẳng nên kiểu này khá dễ chế tạo,
+   sản phẩm đưa vào và ra ở hai đầu.
+    Tuy nhiên chiều dài băng chuyền lớn nên tốn diện tích.
+     Để hạn chế tổn thất nhiệt ở cửa ra vào hàng, hệ thống này dùng cửa là khe hở nhỏ, tùy loại sản phẩm.</p>
+ <p><b>Ưu Điểm</b></p>
+ <p> Thời gian cấp đông nhanh.</p>
+ <p>Hạn chế mất nước tối đa.</p>
+ <p>Chi phí vận hành thấp.</p>
+ <p>Chất lượng sản phẩm tuyệt hảo, không bị cháy lạnh.</p>
+ <p>Đáp ứng vệ sinh an toàn thực phẩm.</p>
+ <p>Thuận lợi trong quá trình bảo trì và nâng cấp (do có thể dễ dàng lắp đặt thêm dàn lạnh).</p>
+ <p><b>SOUTH PACIFIC FISHERY</b> mong muốn mang đến sự thịnh vượng cho doanh nghiệp
+ và sản phẩm tốt nhất đến người tiêu dùng. Vậy nên chúng tôi luôn chú trọng
+  hoàn thiện hệ thống máy móc, công nghệ, mang đến cho khách hàng dịch vụ hoàn
+   hảo với chi phí phải chăng. Qúy khách có thể liên hệ với chúng tôi qua địa chỉ:</p>
+   <div class="center_text">
+   <p><b>SOUTH PACIFIC FISHERY</b></p>
+<p>Địa chỉ: Lô LA1, Đường số 1, Khu công nghiệp và dân cư Xuyên Á, Xã Mỹ Hạnh Bắc, Huyện Đức Hoà, Tỉnh Long An, Việt Nam</p>
+<p>SĐT: 090 922 1888 (Mr. Nam)</p>
+<p>Email: kynamsofis@gmail.com </p>
+<p>Website: www.southpacificfishery.com</p>
+</div>
+</div>
+
+</div>
+
+<!-- SIDE1 -->  
+ 
+   <div class="side1">
+   
+  </div>
+
+ </div>
+  
+ </div>
+ 
+ <!-- SOCIAL MEDIA -->  
+ 
+<div class="flex-container1">
+<a href="https://www.facebook.com/profile.php?id=100008753262768" target="_blank" class="fa1 fa fa-facebook"></a>
+<a href="#" class="fa1 fa fa-twitter"></a>
+<a href="#" class="fa1 fa fa-google"></a>
+<a href="#" class="fa1 fa fa-linkedin"></a>
+<a href="#" class="fa1 fa fa-youtube"></a>
+<a href="https://zalo.me/0938608832" target="_blank" class="fa" ><img class="iconviet" src="zalo_logo.jpg"></a>
+ 
+ </div> 
+
+<!-- TÌM KIẾM -->  
+
+<script src="tim.js"></script>
+
+<!-- BUTTON TOP -->  
+
+<script src="thiet_bi1.js"></script>
+
+<!-- Tạo thiết bị chi tiết -->  
+
+ <script src="thiet_bi.js"></script>
+ 
+ <!-- LƯU THIẾT BỊ -->  
+ 
+ <script>
+function myFunction(event) { 
+	 
+	  
+	  sessionStorage.setItem("thiet_bi", event.currentTarget.id);
+	}
+
+</script>
+
+<!-- LƯU VỀ CÔNG TY --> 
+
+<script>
+function open_vecty(event) { 
+	 
+	  
+	  sessionStorage.setItem("ve_cty", event.currentTarget.id);
+	  console.log(sessionStorage.getItem("ve_cty"));
+	}
+	
+</script>
+
+<!-- // LƯU BIẾN VỀ SẢN PHẨM-->
+
+ <script>
+function open_sanpham(event) { 	 
+	  
+	  sessionStorage.setItem("san_pham", event.currentTarget.id);
+	 
+	  console.log(sessionStorage.getItem("san_pham"));
+	}
+
+</script>
+
+<!-- // LƯU BIẾN VỀ CHỨNG NHẬN-->
+
+ <script>
+function open_chung_nhan(event) { 	 
+	  
+	  sessionStorage.setItem("chung_nhan", event.currentTarget.id);
+	 
+	  console.log(sessionStorage.getItem("chung_nhan"));
+	}
+
+</script>
+
+<!-- // FILTER -->
+
+<script>
+function myFunction1() {
+    var input, filter, ul, li, a, i, txtValue, modal, span;
+    modal = document.getElementById("myModal1");
+    modal.style.display="block";
+    input = document.getElementById("tim_kiem");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+  
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+    
+    span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+}
+</script>
+
+</body>
+</html>

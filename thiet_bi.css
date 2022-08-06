@@ -1,0 +1,529 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+body {  
+   
+     margin: 0%; 
+}  
+ 
+
+   .flex-container {
+  display: flex;
+  flex-flow: row wrap;  
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+
+
+  
+}
+
+.b_color{
+	background: rgba(0, 128, 0, 0.3);
+
+}
+/* XỬ LÝ HÌNH ẢNH */
+#hoa {
+  height:10vh;
+  width: 40%;
+   background-color: transparent;
+  
+
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+ 
+}
+
+.flip-box-inner {
+  position: relative;
+  left:0;
+  top:0;
+  bottom:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+#hoa:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+   position: absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+  display:flex;
+  flex-flow:column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#tim_kiem{display:none;}
+
+#myUL {
+  list-style-type: none;
+  margin: auto auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+ 
+ }
+
+
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+ background-color:#005493; /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  perspective: 1000px;
+  width: 70%;
+  max-width: 1200px;
+   padding: 0; 
+   animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.iconviet { 
+
+ border:5px solid blue;
+ border-radius:50%;
+ width: 4vw;
+ margin: 1vw ;
+
+ 
+}
+
+a img {
+ height:auto;
+ max-width: 100%;
+
+	}
+
+
+.flex-item{
+font-size:2vw;
+
+  
+  
+}
+
+
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+   
+  flex-direction: row;  
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 20%;
+  background-color: Aqua;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 60%;
+
+  padding: 20px;
+
+ 
+
+}
+.side1 {
+  flex: 20%;
+   background: rgba(0, 128, 0, 0.6);
+  padding: 20px;
+}
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  
+  
+}
+
+ video {
+  max-width: 100%;
+  max-height: auto;
+ 
+ 
+} 
+  
+ a:active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+/* Navigation */
+li a:hover,button:hover, .dropdown:hover .dropbtn {
+  background-color: Aqua;
+  
+}
+li a:active{
+	 background-color: #04AA6D;
+}
+
+
+
+ul {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+ 
+}
+/* Stick Navigation */
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: green;
+}
+
+.sticky + .content {
+  padding-top: 10vw;
+}
+
+.dropdown .dropbtn {
+	position:relative;
+}
+li a, .dropbtn {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none; 
+  position:absolute;
+  left:0; 
+ 
+
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 4;
+ 
+}
+
+.dropdown-content a {
+  color:RED;
+  padding: 12px 16px;
+  text-decoration: none;
+ 
+ 
+}
+
+
+.dropdown-content a:hover {background-color: rgb(128, 255, 255);}
+
+.dropdown:hover .dropdown-content {
+
+display: flex;
+flex-flow: row wrap;   
+justify-content: center;
+align-items: center;
+border:5px solid green;
+width:100%;
+border-radius: 10px;
+background-color: LightGray;
+
+
+}
+
+@keyframes animatetop {
+  from {top: -600px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+/* MẠNG XÃ HỘI */
+
+ .flex-container1 {
+  display: flex;
+  flex-flow:column wrap;
+  justify-content: initial;
+ position: fixed;
+  top: 50%;
+  right:0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 3;  
+}
+
+.fa1 {
+  padding: 1vw;
+  font-size: 2vw;
+  width:4vw;
+  text-align: center;
+  text-decoration: none;
+  margin: 1vw ;
+  border-radius: 50%;
+
+}
+
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+/* Tap Thiết Bị*/
+/* Style the buttons inside the tab */
+
+.row1{
+display:flex;
+flex-flow:row wrap;
+justify-content: space-around;
+  align-items: center;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+h3{
+	text-align:center;
+}
+.row1 button {
+  background-color: inherit; 
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: background-color 0.4s;
+ 
+ 
+ 
+}
+.img_thietbi{
+	 width:10vw;
+	height:10vw;
+	transform: translateZ(-100px);
+	transition: transform 1s;
+}
+.img_thietbi:hover{ transform: translateZ(100px);}
+.img_thietbi1{
+	 width:100%;
+	
+}
+
+/* Change background color of buttons on hover */
+.row1 button:hover {
+  background-color:  #ccc;
+ 
+}
+
+/* Create an active/current tablink class */
+.row1 button.active {
+  background-color:#008CBA;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+/* Create an center text class */
+.center_text{text-align:center;}
+
+/* Băng Chuyền perspective */
+.huong_nhin{  
+	perspective: 500px;
+	
+}
+
+
+
+
+/* TOP BUTTON */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+@media (max-width: 800px) {
+  .row,.flex-container {
+    flex-direction: column;
+    justify-content: initial;
+  align-items: initial;
+  }
+  #hoa{
+ 
+
+ 
+  width: 100%;
+   perspective: 4000px;
+ 
+}
+
+.flex-item{
+font-size:4vw; 
+  
+}
+li a{
+	width:100%;
+}
+.dropdown:hover .dropdown-content {
+flex-direction: column;
+  justify-content: initial;
+  align-items: initial; 
+
+
+}
+.fa1 {
+ 
+  font-size: 4vw;
+  width:8vw;
+  padding: 2vw;
+  margin:2vw;
+ 
+ 
+  
+}
+.iconviet { 
+
+   width:8vw;
+  
+  margin:2vw;
+
+ 
+}
+.img_thietbi{
+	
+	width:30vw;
+	height:30vw;
+}
+.sticky{position:static;}
+
+}
